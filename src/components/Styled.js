@@ -38,7 +38,7 @@ justify-content:space-between;
 gap:1%;
 background-color: green;
 `
-export const ProductCard = styled.div`
+export const ProductCardItem = styled.div`
 width: 100%;
 height:100%;
 border: solid  black 1px;

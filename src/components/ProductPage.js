@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ProductCard } from './ProductCard'
 import { ProductListStyled, ProductStyled, ProductMenu,ProductSearch } from './Styled'
 
 export class ProductPage extends Component {
@@ -9,8 +10,10 @@ export class ProductPage extends Component {
         <ProductMenu>menu</ProductMenu>
         <ProductSearch>ProductSearch</ProductSearch>
         <ProductListStyled>
-          teste
-          </ProductListStyled>
+        <ProductCard>
+          
+          </ProductCard>     
+        </ProductListStyled>
       </ProductStyled>
 
     )
