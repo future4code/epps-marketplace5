@@ -1,30 +1,16 @@
 import React, { Component } from 'react'
-import { MainStyled, ProductCard } from './Styled'
+import { MainStyled, ProductCardItem } from './Styled'
 
 export class Main extends Component {
   render() {
     return (
       <div>
         <input></input>
-      <MainStyled>
-        <ProductCard>
-          teste
+        <MainStyled>
+          <ProductCardItem>
 
-</ProductCard>
-        <ProductCard>
-          teste
-
-</ProductCard>
-        <ProductCard>
-          teste
-
-</ProductCard>
-        <ProductCard>
-          teste
-
-</ProductCard>
-
-      </MainStyled>
+          </ProductCardItem>
+        </MainStyled>
       </div>
     )
   }
