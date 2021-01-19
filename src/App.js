@@ -13,7 +13,7 @@ export class App extends Component {
 				<Header></Header>
 				{/* <Main></Main> */}
 				{/* <ProductPage></ProductPage> */}
-				{/* <SellersPage></SellersPage> */}
+				<SellersPage></SellersPage>
 				<Footer></Footer>
 			</MainContainer>
 		)
