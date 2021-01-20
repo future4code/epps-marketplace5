@@ -9,7 +9,7 @@ import { Main } from './components/Main'
 
 export const MainPageContainer = styled.div`
 display: grid;
-grid-template-rows: 15% 70% 15%;
+grid-template-rows: 20% 65% 15%;
 flex-direction: column;
 max-width: 100vw;
 height: 100vh;
