@@ -39,8 +39,8 @@ gap:1%;
 background-color: green;
 `
 export const ProductCardItem = styled.div`
-width: 100%;
-height:100%;
+width: 80%;
+height:80%;
 border: solid  black 1px;
 `
 export const ProductStyled = styled.div`
