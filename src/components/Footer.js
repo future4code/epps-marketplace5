@@ -1,44 +1,55 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-
-const FooterStyled = styled.div`
-display: grid;
-grid-template-rows: repeat(2,1fr);
-background-color: #dc312e;
-width: 100vw;
-height: 100%;
-align-items: center;
-justify-content: center;
-`
-const MidlleStyled = styled.div`
-display: inline-flex;
-flex-direction: row;
-`
-
-const NameStyled = styled.p`
-color: white;
-margin-right: 22vw;
-text-align: center;
-font-size: 30px
-`
-
-const Button = styled.button`
-margin-right: 8vw;
-padding: 3vh 6vw;
-background-color: white;
-font-size: 20px
-`
+import React, { Component } from "react";
+// import {FooterStyled} from './Styled';
+import {
+  FooterStyled,
+  Contact,
+  ContactIcons,
+  TextFooter,
+  Payment,
+  PaymentIcons,
+} from "./StyledFooter";
+import LogoEmail from "../img/email-icon.png";
+import LogoFacebook from "../img/facebook-icon.png";
+import LogoTwitter from "../img/twitter-icon.png";
+import LogoPhone from "../img/whatsapp-icon.png";
+import LogoAmericaExpress from "../img/americanexpress-icon.png";
+import LogoMastercard from "../img/master-icon.png";
+import LogoVisa from "../img/visa-icon.png";
+import LogoPaypal from '../img/paypal-icon.png'
 
 export class Footer extends Component {
   render() {
     return (
       <FooterStyled>
-        <MidlleStyled>
-          <NameStyled>FutureCar</NameStyled>
-        <Button>Venda</Button> 
-        <Button>Compra</Button> 
-        </MidlleStyled>
+        <Contact>
+          <a href="https://www.outlook.com" target="_blank">
+            <ContactIcons src={LogoEmail} />
+          </a>
+
+          <a href="https://www.facebook.com/" target="_blank">
+            <ContactIcons src={LogoFacebook} />
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <ContactIcons src={LogoTwitter} />
+          </a>
+          <a href="https://www.whatsapp.com" target="_blank">
+            <ContactIcons src={LogoPhone} />
+          </a>
+        </Contact>
+
+        <TextFooter>Sobre nós</TextFooter>
+        
+        <TextFooter>Institucional</TextFooter>
+
+        <TextFooter>F.A.Q</TextFooter>
+
+        <Payment>
+          <PaymentIcons src={LogoAmericaExpress} />
+          <PaymentIcons src={LogoMastercard} />
+          <PaymentIcons src={LogoVisa} />
+          <PaymentIcons src={LogoPaypal} />
+        </Payment>
       </FooterStyled>
-    )
+    );
   }
 }
