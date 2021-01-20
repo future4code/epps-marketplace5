@@ -1,76 +1,75 @@
 import React, { Component } from 'react'
-import { SellerForm,FormTop,FormBottom,LastButton } from './StyledSellers'
+import { SellerForm, FormTop, FormBottom, LastButton } from './StyledSellers'
 
 export class SellersPage extends Component {
 
   render() {
     return (
-      
-      <SellerForm>
 
+      <SellerForm>
         <FormTop>
 
           <div>
-          <label for="input1"> Marca: </label>          
-          <input id="input1"/>
+            <label htmlFor="input1"> Marca: </label>
+            <input id="input1" />
           </div>
 
           <div>
-          <label for="input2"> Modelo: </label>
-          <input id="input2"/>
+            <label htmlFor="input2"> Modelo: </label>
+            <input id="input2" />
           </div>
 
           <div>
-          <label for="input3"> Cor: </label>
-          <input id="input3"/>
+            <label htmlFor="input3"> Cor: </label>
+            <input id="input3" />
           </div>
 
           <div>
 
-          <label for="input4"> Ano: </label>
-          <input id="input4"/>
-          
+            <label htmlFor="input4"> Ano: </label>
+            <input id="input4" />
+
           </div>
 
           <div>
-          <label for="input5"> Preço: </label>
-          <input id="input5"/>
+            <label htmlFor="input5"> Preço: </label>
+            <input id="input5" />
           </div>
 
           <div>
-            
-          <label for="input6"> Forma de Pagamento: </label>
-          <input id="input6"/>
+
+            <label htmlFor="input6"> Forma de Pagamento: </label>
+            <input id="input6" />
           </div>
 
           <div>
-          <label for="input7"> Prazo de Entrega: </label>
-          <input id="input7"/>
+            <label htmlFor="input7"> Prazo de Entrega: </label>
+            <input id="input7" />
           </div>
 
           <div>
-          <label for="input8"> Categoria: </label>
-          <input id="input8"/>
+            <label htmlFor="input8"> Categoria: </label>
+            <input id="input8" />
           </div>
 
-         </FormTop>
-        
-        
+        </FormTop>
+
+
 
         <FormBottom>
-        
-        <p><label for="textarea"> Descreva o veículo: </label></p>
 
-        <textarea id="textarea" rows="7" cols="60" />
+          <p><label htmlFor="textarea"> Descreva o veículo: </label></p>
 
-        <LastButton>
-          <button>Cadastrar</button>
-        </LastButton>
+          <textarea id="textarea" rows="7" cols="60" />
+
+          <LastButton>
+            <button>Cadastrar</button>
+          </LastButton>
 
         </FormBottom>
-       
+
       </SellerForm>
-      
+
     )
   }
 }

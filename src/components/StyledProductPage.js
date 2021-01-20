@@ -25,14 +25,6 @@ justify-content:space-between;
 grid-column:2;
 grid-row: 2;
 `
-export const ProductMenu = styled.div`
-width: auto;
-height:100%;
-align-items:center;
-justify-content:space-between;
-grid-column:1;
-grid-row: 1/3;
-`
 export const ProductSearch = styled.div`
 width: auto;
 height:100%;
@@ -40,4 +32,22 @@ align-items:center;
 justify-content:space-between;
 grid-column:2;
 grid-row: 1;
+`
+export const ProductMenu = styled.div`
+width: auto;
+height:100%;
+align-items:center;
+justify-content:space-between;
+grid-column:1;
+grid-row: 1/3;
+border: 1px solid black;
+Display: grid;
+grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+grid-template-columns: repeat(1,5fr);
+`
+export const InputBusca = styled.input`
+margin-left: 20%;
+margin-top: 2%;
+width: 600px;
+border-radius: 10px;
 `

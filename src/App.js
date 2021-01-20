@@ -7,7 +7,7 @@ import { SellersPage } from './components/SellersPage'
 import { Main } from './components/Main'
 
 
-export const MainContainer = styled.div`
+export const MainPageContainer = styled.div`
 display: grid;
 grid-template-rows: 15% 70% 15%;
 flex-direction: column;
@@ -64,11 +64,11 @@ export class App extends Component {
 	}
 	render() {
 		return (
-			<MainContainer>
+			<MainPageContainer>
 				<Header buy={this.ChangePageBuy} sell={this.ChangePageSell}home={this.ChangePageHome}/>
 				{this.ShowPage()}
 				<Footer/>
-			</MainContainer>
+			</MainPageContainer>
 		)
 	}
 }
