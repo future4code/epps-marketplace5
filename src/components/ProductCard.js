@@ -1,6 +1,23 @@
+import axios from 'axios'
+import styled from 'styled-components'
 import React, { Component } from 'react'
 import {ContainerCard,ImageCard,PCard,ButtonCard } from './Styled/StyledProductCard'
 import {ProductCardItem} from './Styled/StyledProductPage'
+
+
+
+const MainStyled = styled.div`
+display:grid;
+grid-template-rows: repeat(4,1fr);
+grid-template-columns:repeat(3,10%);
+width: 80vw;
+height:100%;
+margin-top: -2%;
+align-items:center;
+justify-content:space-around;
+gap:5%;
+`
+
 
 export class ProductCard extends Component {
   // state = {
@@ -43,18 +60,63 @@ export class ProductCard extends Component {
   //     }
   //   ]
   // }
+state ={
+  cars:[]    
+}
+
+componentDidMount = () =>{
+  this.getCars()
+}
+
+
+// componentDidUpdate = () =>{
+//   this.filteredCars()
+// }
+
+getCars =() => {
+  axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/futureCarOne/cars')
+  .then((res) =>{
+    this.setState({cars:res.data.cars})
+    console.log(this.state.cars)
+    // console.log({res})
+  })
+  .catch((err) =>{
+    // console.log(err)
+  })
+}
+
+filteredCars =() =>{
+  return this.state.cars.filter(car => car.name.includes(this.props.textInput))
+}
+
+
   render() {
+    // console.log(this.state.cars)
+    const filteredCars = this.filteredCars()
+    console.log()
+
     return (
 
       <ProductCardItem>
-        <ContainerCard>
-        <ImageCard src= "https://1.bp.blogspot.com/-j5yZskmK3Dw/XQpNS-UzYfI/AAAAAAAABWQ/YSo8CML66x4ikE7lNL3-fLZig8gKbkXzgCLcBGAs/s1600/novo-peugeot-2008-2020%2B%252814%2529.jpg" alt= "BMW" />
-        <PCard>BMW M8</PCard>
-        <PCard>R$ 350.000,00</PCard>
-        <ButtonCard>Comprar</ButtonCard>
-        </ContainerCard>
-      </ProductCardItem>
+
+        <MainStyled>
       
+
+      {filteredCars.map((car) => {
+          return(
+            <ContainerCard>              
+              <ImageCard src= {car.imagen} alt= "BMW" />        
+              <PCard> {car.name}</PCard>
+              <PCard> {car.price}</PCard>        
+              <ButtonCard>Comprar</ButtonCard>
+            </ContainerCard>
+
+          )
+      })}
+      
+      </MainStyled>
+
+    </ProductCardItem>
 
     )
   }

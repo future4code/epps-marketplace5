@@ -1,19 +1,50 @@
+// import axios from 'axios'
 import React, { Component } from 'react'
-import { MainContainer, MainSearchBar, MainStyled} from './Styled/StyledMain'
-import {ProductCardItem} from './Styled/StyledProductPage'
+import { MainContainer, MainSearchBar} from './Styled/StyledMain'
+import {ProductCard} from './ProductCard'
+
+
+
 export class Main extends Component {
+//   state ={
+//     cars:[]    
+// }
+
+// componentDidMount = () =>{
+//   this.getCars()
+// }
+
+// getCars =() => {
+//   axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/futureCarOne/cars')
+//   .then((res) =>{
+//     this.setState({cars:res.data})
+//     console.log({res})
+//   })
+//   .catch((err) =>{
+//     console.log(err)
+//   })
+// }
+state={
+  textInput:""
+}
+
+onChangeInput = (e) =>{
+  this.setState({textInput:e.targe.value}) 
+}
+
   render() {
+  
     return (
       <MainContainer>
-        <MainSearchBar placeholder='Busque Seu Futuro Carro Aqui'></MainSearchBar>
-        <MainStyled>
-          <ProductCardItem/>
-          <ProductCardItem/>
-          <ProductCardItem/>
-          <ProductCardItem/>
-          <ProductCardItem/>
-          <ProductCardItem/>
-        </MainStyled>
+
+      
+        <MainSearchBar placeholder='Busque Seu Futuro Carro Aqui' onChangeInput = {this.onChangeInput} name={this.state.textInput}></MainSearchBar>
+       
+        {/* <MainStyled> */}
+                      
+        <ProductCard textInput={this.state.textInput}/>
+      
+        {/* </MainStyled> */}
       </MainContainer>
     )
   }

@@ -1,7 +1,8 @@
 import styled from  'styled-components'
 
 export const ContainerCard = styled.div`
-  height: 80%;
+  // height: 80%;
+  
 `;
 export const ImageCard = styled.img`
   height: 70%;
