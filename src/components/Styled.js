@@ -18,15 +18,15 @@ height:100%;
 align-items:center;
 justify-content:center;
 `
-export const FooterStyled = styled.div`
-display:grid;
-grid-template-rows: repeat(2,1fr);
-background-color: #dc312e;
-width: 100vw;
-height:100%;
-align-items:center;
-justify-content:center;
-`
+// export const FooterStyled = styled.div`
+// display:grid;
+// grid-template-rows: repeat(2,1fr);
+// background-color: #dc312e;
+// width: 100vw;
+// height:100%;
+// align-items:center;
+// justify-content:center;
+// `
 export const MainStyled = styled.div`
 display:grid;
 grid-template-rows: repeat(3,1fr);

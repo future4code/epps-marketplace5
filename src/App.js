@@ -11,9 +11,9 @@ export class App extends Component {
 		return (
 			<MainContainer>
 				<Header></Header>
-				{/* <Main></Main> */}
-				{/* <ProductPage></ProductPage> */}
-				{/* <SellersPage></SellersPage> */}
+				<Main></Main>
+				<ProductPage></ProductPage>
+				<SellersPage></SellersPage>
 				<Footer></Footer>
 			</MainContainer>
 		)
