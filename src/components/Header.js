@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HeaderBar, MidlleStyled, NameStyled, Button, ImgLogo, HeaderStyled } from './StyledHeader'
+import { HeaderBar, MidlleStyled, NameStyled, Button, ImgLogo, HeaderStyled } from './Styled/StyledHeader'
 
 
 export class Header extends Component {

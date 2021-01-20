@@ -7,7 +7,7 @@ import {
   TextFooter,
   Payment,
   PaymentIcons,
-} from "./StyledFooter";
+} from "./Styled/StyledFooter";
 import LogoEmail from "../img/email-icon.png";
 import LogoFacebook from "../img/facebook-icon.png";
 import LogoTwitter from "../img/twitter-icon.png";

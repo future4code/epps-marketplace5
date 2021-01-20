@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { SellerForm, FormTop, FormBottom, LastButton } from './StyledSellers'
+import { SellerForm, FormTop, FormBottom, LastButton } from './Styled/StyledSellers'
 
 export class SellersPage extends Component {
 

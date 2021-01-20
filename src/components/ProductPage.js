@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ProductCard } from './ProductCard'
-import { ProductListStyled, ProductStyled, ProductMenu, ProductSearch, InputBusca } from './StyledProductPage'
+import { ProductListStyled, ProductStyled, ProductMenu, ProductSearch, InputBusca } from './Styled/StyledProductPage'
 
 export class ProductPage extends Component {
   render() {
@@ -8,8 +8,6 @@ export class ProductPage extends Component {
 
       <ProductStyled>
         <ProductMenu>
-          <label for="título">Modelo(?):</label>
-          <input type="text" id="título" />
           <label for="entrega">Entrega:</label>
           <input type="date" id="entrega" />
           <label for="vmin">Valor Mínimo</label>
