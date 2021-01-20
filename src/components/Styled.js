@@ -79,12 +79,13 @@ justify-content:space-between;
 grid-column:2;
 grid-row: 1;
 `
-export const SellerForm = styled.div`
-display:grid;
-grid-template-rows: 20% 80%;
-grid-template-columns:1fr;
-width: auto;
-height:100%;
-align-items:center;
-justify-content:space-between;
-`
+// export const SellerForm = styled.div`
+// display:grid;
+// grid-template-rows: 20% 80%;
+// grid-template-columns:1fr;
+// width: auto;
+// height:100%;
+// align-items:center;
+// justify-content:space-between;
+// border: 1px solid black;
+// `
