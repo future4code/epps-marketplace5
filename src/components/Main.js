@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { MainStyled, ProductCardItem } from './Styled'
+import { MainStyled, ProductCardItem } from './StyledMain'
 
 export class Main extends Component {
   render() {

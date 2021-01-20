@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ProductCard } from './ProductCard'
-import { ProductListStyled, ProductStyled, ProductMenu,ProductSearch } from './Styled'
+import { ProductListStyled, ProductStyled, ProductMenu,ProductSearch } from './StyledProductPage'
 
 export class ProductPage extends Component {
   render() {
