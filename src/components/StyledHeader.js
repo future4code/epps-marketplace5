@@ -5,7 +5,7 @@ export const HeaderStyled = styled.div`
 display: grid;
 background-color: #6D6D6D;
 width: 100vw;
-height: auto;
+height: 100%;
 align-items: center;
 justify-content: center;
 `
@@ -13,7 +13,7 @@ export const HeaderBar = styled.div`
 display: grid;
 background-color: #dc312e;
 width: 100vw;
-height: auto;
+height: 100%;
 align-items: center;
 justify-content: center;
 z-index:100;
@@ -42,5 +42,5 @@ font-size: 20px;
 
 export const ImgLogo = styled.img`
 display: grid;
-width: 9%;
+width: 10%;
 `
