@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {ContainerCard,ImageCard,PCard,ButtonCard } from './StyledProductCard'
-
+import {ProductCardItem} from './StyledProductPage'
 
 export class ProductCard extends Component {
   // state = {

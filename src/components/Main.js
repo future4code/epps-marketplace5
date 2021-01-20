@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { MainStyled, ProductCardItem } from './StyledMain'
-
+import { MainStyled} from './StyledMain'
+import {ProductCardItem} from './StyledProductPage'
 export class Main extends Component {
   render() {
     return (

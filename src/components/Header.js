@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { FooterStyled, MidlleStyled, NameStyled, Button } from './StyledHeader'
 
 
-export default class Header extends Component {
+export class Header extends Component {
   render() {
     return (
       <FooterStyled>
         <MidlleStyled>
-          <NameStyled>FutureCar</NameStyled>
-          <Button>Venda</Button>
-          <Button>Compra</Button>
+          <NameStyled onClick={this.props.home}>FutureCar</NameStyled>
+          <Button onClick={this.props.sell}>Venda</Button>
+          <Button onClick={this.props.buy}>Compra</Button>
         </MidlleStyled>
       </FooterStyled>
     );
