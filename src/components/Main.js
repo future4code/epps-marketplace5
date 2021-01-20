@@ -1,17 +1,20 @@
 import React, { Component } from 'react'
-import { MainStyled} from './StyledMain'
+import { MainContainer, MainSearchBar, MainStyled} from './StyledMain'
 import {ProductCardItem} from './StyledProductPage'
 export class Main extends Component {
   render() {
     return (
-      <div>
-        <input></input>
+      <MainContainer>
+        <MainSearchBar placeholder='Busque Seu Futuro Carro Aqui'></MainSearchBar>
         <MainStyled>
-          <ProductCardItem>
-
-          </ProductCardItem>
+          <ProductCardItem/>
+          <ProductCardItem/>
+          <ProductCardItem/>
+          <ProductCardItem/>
+          <ProductCardItem/>
+          <ProductCardItem/>
         </MainStyled>
-      </div>
+      </MainContainer>
     )
   }
 }
