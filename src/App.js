@@ -12,8 +12,8 @@ export class App extends Component {
 			<MainContainer>
 				<Header></Header>
 				{/* <Main></Main> */}
-				{ <ProductPage></ProductPage> }
-				{/* <SellersPage></SellersPage> */}
+				{/* <ProductPage></ProductPage> */}
+				<SellersPage></SellersPage>
 				<Footer></Footer>
 			</MainContainer>
 		)
