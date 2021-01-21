@@ -70,13 +70,13 @@ state ={
   cars:[]    
 }
 
-componentDidMount = () =>{
+componentDidUpdate  = () =>{
   this.getCars()
 }
 
-// componentDidUpdate = () =>{
-//   this.filteredCars()
-// }
+componentDidMount = () =>{
+  this.getCars()
+}
 
 getCars =() => {
   axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/futureCarOne/cars')
@@ -89,23 +89,18 @@ getCars =() => {
     // console.log(err)
   })
 }
-
 filteredCars =() =>{
   return this.state.cars.filter(car => car.name.includes(this.props.textInput))
 }
 
 
   render() {
-    // console.log(this.state.cars)
     const filteredCars = this.filteredCars()
     console.log()
 
     return (
-
       <ProductCardItem>
-
-        <MainStyled>
-      
+        <MainStyled>      
 
       {filteredCars.map((car) => {
           return(

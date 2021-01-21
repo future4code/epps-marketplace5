@@ -29,7 +29,7 @@ state={
 }
 
 onChangeInput = (e) =>{
-  this.setState({textInput:e.targe.value}) 
+  this.setState({textInput:e.target.value}) 
 }
 
   render() {
@@ -38,7 +38,11 @@ onChangeInput = (e) =>{
       <MainContainer>
 
       
-        <MainSearchBar placeholder='Busque Seu Futuro Carro Aqui' onChangeInput = {this.onChangeInput} name={this.state.textInput}></MainSearchBar>
+        <MainSearchBar type="text" placeholder='Busque Seu Futuro Carro Aqui' 
+        
+        onChange = {this.onChangeInput} 
+        
+        value={this.state.textInput}></MainSearchBar>
        
         {/* <MainStyled> */}
                       
