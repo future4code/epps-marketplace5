@@ -6,6 +6,7 @@ justify-content: space-around;
 background-color: #dc312e;
 width: 100vw;
 height: 15vh;
+z-index:100;
 `;
 
 export const Contact = styled.div`
