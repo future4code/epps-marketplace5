@@ -1,7 +1,7 @@
 // import axios from 'axios'
 import React, { Component } from 'react'
 import { MainContainer, MainSearchBar} from './Styled/StyledMain'
-import {ProductCard} from './ProductCard'
+import {ProductCard1} from './ProductCard1'
 
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ProductCard } from './ProductCard'
+import { ProductCard1 } from './ProductCard1'
 import { ProductListStyled, ProductStyled, ProductMenu, ProductSearch, InputBusca } from './Styled/StyledProductPage'
 
 export class ProductPage extends Component {
