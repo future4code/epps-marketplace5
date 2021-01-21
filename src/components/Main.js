@@ -1,15 +1,27 @@
+// import axios from 'axios'
 import React, { Component } from 'react'
-import { ProductCard } from './ProductCard'
-import { MainContainer, MainSearchBar, MainStyled} from './Styled/StyledMain'
-import {ProductCardItem} from './Styled/StyledProductPage'
+import { MainContainer, MainSearchBar } from './Styled/StyledMain'
+import { ProductCardMain } from './ProductCardMain'
+
+
+
 export class Main extends Component {
+  state = {
+    textInput: ""
+  }
+
+  onChangeInput = (e) => {
+    this.setState({ textInput: e.target.value })
+  }
+
   render() {
+
     return (
       <MainContainer>
-        <MainSearchBar placeholder='Busque Seu Futuro Carro Aqui'></MainSearchBar>
-        <MainStyled>
-          <ProductCard/>
-        </MainStyled>
+        <MainSearchBar type="text" placeholder='Busque Seu Futuro Carro Aqui'
+          onChange={this.onChangeInput}
+          value={this.state.textInput}></MainSearchBar>
+        <ProductCardMain textInput={this.state.textInput} />
       </MainContainer>
     )
   }

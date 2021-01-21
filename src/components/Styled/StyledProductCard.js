@@ -24,7 +24,6 @@ export const ButtonCard = styled.button`
   font-weight: 600;
   line-height: 16px;
   padding: 5px ;
-  width:100%;
   display:flex;
   justify-content:center;
   &:hover {
