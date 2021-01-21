@@ -4,8 +4,8 @@ export const ContainerCard = styled.div`
   height: 80%;
 `;
 export const ImageCard = styled.img`
-  height: 70%;
-  width: 100%;
+  height: 10%;
+  width: 10%;
 `;
 export const PCard = styled.p`
   display: flex;
