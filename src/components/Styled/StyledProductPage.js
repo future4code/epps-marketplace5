@@ -3,7 +3,7 @@ import styled from  'styled-components'
 export const ProductCardItem = styled.div`
 width: 80%;
 height:80%;
-// border: solid  black 1px;
+border: solid  black 1px;
 `
 export const ProductStyled = styled.div`
 display:grid;
