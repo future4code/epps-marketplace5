@@ -5,13 +5,14 @@ import { Header } from './components/Header'
 import { ProductPage } from './components/ProductPage'
 import { SellersPage } from './components/SellersPage'
 import { Main } from './components/Main'
+import {CarDetails} from './components/CarDetails'
 
 
 export const MainPageContainer = styled.div`
 display: grid;
 grid-template-rows: 20% 65% 15%;
 flex-direction: column;
-max-width: 100vw;
+width: 100vw;
 height: 100vh;
 align-items:center;
 justify-content:center;
@@ -24,6 +25,8 @@ export class App extends Component {
 		SellersPage: false,
 	}
 
+
+	  
 	ChangePageSell = () => {
 		this.setState({
 			SellersPage: !this.state.SellersPage

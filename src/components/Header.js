@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
-import { HeaderBar, MidlleStyled, NameStyled, Button, ImgLogo, HeaderStyled } from './Styled/StyledHeader'
+import { HeaderBar, MidlleStyled, NameStyled, Button, ImgLogo, HeaderStyled, HeaderContainer } from './Styled/StyledHeader'
 
 
 export class Header extends Component {
   render() {
     return (
-    <HeaderStyled>
-      <ImgLogo src= "https://i.imgur.com/jz0OHrk.png" />
-      <HeaderBar>
-         <MidlleStyled>
-          <NameStyled onClick={this.props.home}>FutureCar</NameStyled>
+      <HeaderContainer>
+        <HeaderStyled>
+          <ImgLogo src="https://i.imgur.com/jz0OHrk.png" />
+        </HeaderStyled>
+        <HeaderBar>
+          <Button onClick={this.props.home}>FutureCar</Button>
           <Button onClick={this.props.sell}>Venda</Button>
           <Button onClick={this.props.buy}>Compra</Button>
-        </MidlleStyled>
-      </HeaderBar>
-      </HeaderStyled>
+        </HeaderBar>
+      </HeaderContainer>
     );
   }
 }
