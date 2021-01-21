@@ -9,7 +9,7 @@ import {ProductCardItem} from './Styled/StyledProductPage'
 const MainStyled = styled.div`
 display:grid;
 grid-template-rows: repeat(4,1fr);
-grid-template-columns:repeat(3,10%);
+grid-template-columns:repeat(3,7%);
 width: 80vw;
 height:100%;
 margin-top: -2%;
@@ -17,6 +17,12 @@ align-items:center;
 justify-content:space-around;
 gap:5%;
 `
+const FillroQuantidade = styled.h4`
+margin-left: 35%;
+`
+
+
+
 
 
 export class ProductCard extends Component {
@@ -68,7 +74,6 @@ componentDidMount = () =>{
   this.getCars()
 }
 
-
 // componentDidUpdate = () =>{
 //   this.filteredCars()
 // }
@@ -115,6 +120,8 @@ filteredCars =() =>{
       })}
       
       </MainStyled>
+
+      <FillroQuantidade><i>Temos {filteredCars.length} carros esperando por você!</i></FillroQuantidade>
 
     </ProductCardItem>
 
