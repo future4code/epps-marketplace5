@@ -10,17 +10,16 @@ align-items:center;
 justify-items:center;
 justify-content:center;
 `
-
 export const MainStyled = styled.div`
 display:grid;
 grid-template-rows: repeat(2,1fr);
-grid-template-columns:repeat(3,25%);
-width: 80vw;
-height:100%;
+grid-template-columns:repeat(6,7%);
+height:97%;
 align-items:center;
-justify-items:center;
 justify-content:space-around;
-gap:5%;
+`
+export const FiltroQuantidade = styled.h2`
+margin-top:60px;
 `
 export const MainSearchBar = styled.input`
 background-color: white;

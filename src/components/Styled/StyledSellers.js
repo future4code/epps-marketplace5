@@ -18,18 +18,49 @@ margin-left: 20%;
 width: 60%;
 height:95%;
 cursor: pointer;
-// border: 1px solid black;
 `
 
 export const FormBottom= styled.div`
-width: auto;
-height:80%;
-margin-left: 32%;
-// border: 1px solid black;
+display:flex;
+flex-direction:column;
+text-align:center;
+align-items:center;
+justify-content:space-around;
+outline:none;
 `
 
 export const LastButton = styled.p`
 margin: auto;
 margin-left: 22%;
-// border: 1px solid black;
+`
+export const Buttons = styled.button`
+  background-color: white;
+  border-color: #004abe;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  color: #004abe;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 5px ;
+  display:flex;
+  justify-content:center;
+  &:hover {
+    background: #e9f0f7;
+    transition: all .4s ease-in-out;
+  }
+`;
+export const DescriText = styled.textarea`
+border-radius: 10px;
+padding:10px;
+outline:none;
+`
+export const DivBox = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:space-evenly;
+text-align:center;
+outline:none;
 `

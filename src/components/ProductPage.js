@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { ProductCard } from './ProductCard'
-import { ProductListStyled, ProductStyled, ProductMenu, ProductSearch, ProductCardItem, InputBusca } from './Styled/StyledProductPage'
-import {ContainerCard, PCard, ImageCard} from './Styled/StyledProductCard'
+import { ProductStyledItem,ProductStyled, ProductMenu, ProductSearch, ProductCardItem,Inputs} from './Styled/StyledProductPage'
+import {ContainerCard, PCard, ImageCard, ButtonCard} from './Styled/StyledProductCard'
+import { MainSearchBar } from './Styled/StyledMain'
 
 export class ProductPage extends Component {
   state = {
     productlist: [],
-    inputMin: 0,
-    inputMax: 100000,
+    inputMin: 1,
+    inputMax: 200000,
     inputText: '',
-    inputDate: '',
+    inputDate: 100,
   }
 
   componentDidMount() {
@@ -59,19 +59,19 @@ export class ProductPage extends Component {
       <ProductStyled>
         <ProductMenu>
           <label for="entrega">Entrega:</label>
-          <input 
+          <Inputs 
           value={this.state.inputDate}
           onChange={this.onChangeFilterDate}
           type="number" placeholder='insira o número de dias' id="entrega" />
           <label for="vmin">Valor Mínimo</label>
-          <input 
+          <Inputs 
           value={this.state.inputMin}
           onChange={this.onChangeFilterMin}
           type="number" 
           min='0' 
           id="vmin" />
           <label for="vmax">Valor Máximo</label>
-          <input 
+          <Inputs 
           value={this.state.inputMax}
           onChange={this.onChangeFilterMax}
           type="number" 
@@ -79,24 +79,24 @@ export class ProductPage extends Component {
           id="vmax" />
         </ProductMenu>
         <ProductSearch>
-        <InputBusca onChange={this.onChangeFilterText} type="text" id="título" placeholder="Busque seu carro"/>
+        <MainSearchBar onChange={this.onChangeFilterText} type="text" id="título" placeholder="Busque seu carro"/>
         </ProductSearch>
-        <ProductListStyled>
-              
         <ProductCardItem>
+        <ProductStyledItem>    
           {ListaFiltrada.map((item) => {
             return (
               <ContainerCard>
                 <PCard>{item.name}</PCard>
-                <PCard>{item.price}</PCard>
+                <PCard>${item.price}</PCard>
                 <ImageCard src={item.imagen}/>
+                <ButtonCard>Comprar</ButtonCard>
               </ContainerCard>
             )
           })}
           
-          </ProductCardItem>
-        
-        </ProductListStyled>
+         
+        </ProductStyledItem>  
+      </ProductCardItem>   
       </ProductStyled>
 
     )
