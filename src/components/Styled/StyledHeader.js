@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-
-
 export const HeaderContainer = styled.div`
 display: grid;
 grid-template-rows:40% 60%;
@@ -52,7 +50,7 @@ padding: 5px ;
 color: white;
 text-align: center;
 font-size: 30px;
-width: 12vw;
+min-width: 12vw;
 `
 
 export const ImgLogo = styled.img`
