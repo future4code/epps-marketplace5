@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { DivBox, DescriText, Buttons, SellerForm, FormTop, FormBottom, LastButton } from './Styled/StyledSellers'
+import { DivBox, DescriText, Buttons, SellerForm, FormTop, FormBottom } from './Styled/StyledSellers'
 import axios from 'axios'
 import { Inputs } from './Styled/StyledProductPage'
+import { Selects } from './Styled/CarDetailsStyled'
 
 
 export class SellersPage extends Component {
@@ -61,7 +62,9 @@ export class SellersPage extends Component {
       description: this.state.inputDescricao,
       price: this.state.inputPreco,
       paymentMethod: this.state.inputFormaDePagamento,
-      shipping: this.state.inputPrazoDeEntrega
+      shipping: this.state.inputPrazoDeEntrega,
+      Categoria: this.state.inputCategoria,
+      Modelo: this.state.inputModelo
     }
     axios.post('https://us-central1-labenu-apis.cloudfunctions.net/futureCarOne/cars', body
     ).then(response => {
@@ -125,7 +128,7 @@ export class SellersPage extends Component {
             <Inputs
               id="input4"
               placeholder="Insira o ano do veículo"
-              type="text"
+              type="number"
               value={this.state.inputAno}
               onChange={this.changeInputAno} />
           </DivBox>
@@ -162,12 +165,18 @@ export class SellersPage extends Component {
 
           <DivBox>
             <label htmlFor="input8"> Categoria: </label>
-            <Inputs
+            <Selects
               id="input8"
               placeholder="Esportivo, popular, pickup..."
               type="text"
               value={this.state.inputCategoria}
-              onChange={this.changeInputCategoria} />
+              onChange={this.changeInputCategoria} >
+              <option value=""></option>
+              <option value="Passeio">Passeio</option>
+              <option value="Familia">Familia</option>
+              <option value="Esportivo">Esportivo</option>
+              <option value="Viagem">Viagem</option>
+            </Selects>
           </DivBox>
         </FormTop>
 

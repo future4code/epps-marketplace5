@@ -10,13 +10,13 @@ height:100%;
 `
 export const FormTop = styled.div`
 Display: grid;
-grid-template-rows: 50% 50%;
 grid-template-columns: repeat(4,1fr);
-gap: 8%;
-margin-top: 1%;
-margin-left: 20%;
-width: 60%;
-height:95%;
+justify-content:center;
+text-align:center;
+align-items:center;
+justify-items:center;
+width: 100vw;
+height:100%;
 cursor: pointer;
 `
 
@@ -56,6 +56,8 @@ export const DescriText = styled.textarea`
 border-radius: 10px;
 padding:10px;
 outline:none;
+width:50vw;
+height:20vh;
 `
 export const DivBox = styled.div`
 display:flex;

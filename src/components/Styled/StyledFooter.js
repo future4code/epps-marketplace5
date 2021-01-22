@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const FooterStyled = styled.div`
 display: flex;
 justify-content: space-around;
-background-color: #dc312e;
+background-color: #8e8e8e;
 width: 100vw;
-height: 15vh;
-z-index:100;
+height:100%;
+grid-row:3;
+/* z-index:100; */
 `;
 
 export const Contact = styled.div`
@@ -36,6 +37,7 @@ opacity: 0.85;
     font-size: 1.02rem;
     transition: 400ms;
     opacity: 1;
+    cursor: pointer;
 }
 `;
 

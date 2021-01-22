@@ -4,25 +4,30 @@ import styled from  'styled-components'
 export const ProductStyled = styled.div`
 display:grid;
 width: 100vw;
-height:90%;
+height:100%;
 align-items:center;
 justify-items:center;
 justify-content:space-between;
 z-index:0;
 `
 export const DetalhesCarro = styled.div`
-width: 90%;
-height:100%;
+/* max-width:60%; */
+width: 100%;
+height:50%;
 grid-column:2;
+align-items:center;
+justify-items:center;
+justify-content:space-between;
+padding-top:5%;
 `
 export const Detalhes = styled.div`
 display:grid;
 grid-template-columns:50% 50%;
-width: auto;
+width: 98vw;
 height:100%;
 align-items:center;
 justify-items:center;
-justify-content:space-between;
+justify-content:space-around;
 `
 export const Contato = styled.div`
 display:flex;
@@ -34,7 +39,7 @@ align-items:center;
 justify-items:center;
 justify-content:space-between;
 `
-export const Inputs = styled.div`
+export const Inputs = styled.input`
 display:flex;
 width: 20vw;
 height:100%;
@@ -44,7 +49,14 @@ align-items:center;
 justify-items:center;
 justify-content:space-between;
 `
-
+export const Selects = styled.select`
+width: 10vw;
+height: 4vh;
+width: 15vw;
+border-radius: 10px;
+text-align: center;
+outline: none;
+`
 export const ButtonCard = styled.button`
   background-color: white;
   border-color: #004abe;

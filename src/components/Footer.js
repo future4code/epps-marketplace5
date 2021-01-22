@@ -37,11 +37,11 @@ export class Footer extends Component {
           </a>
         </Contact>
 
-        <TextFooter>Sobre nós</TextFooter>
+        <TextFooter onClick={this.props.aboutus}>Sobre nós</TextFooter>
         
-        <TextFooter>Institucional</TextFooter>
+        <TextFooter onClick={this.props.aboutus}>Institucional</TextFooter>
 
-        <TextFooter>F.A.Q</TextFooter>
+        <TextFooter onClick={this.props.aboutus}>F.A.Q</TextFooter>
 
         <Payment>
           <PaymentIcons src={LogoAmericaExpress} />

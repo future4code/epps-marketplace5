@@ -5,9 +5,10 @@ import { ProductCardMain } from './ProductCardMain'
 
 
 
+
 export class Main extends Component {
   state = {
-    textInput: ""
+    textInput: "",
   }
 
   onChangeInput = (e) => {
@@ -21,7 +22,7 @@ export class Main extends Component {
         <MainSearchBar type="text" placeholder='Busque Seu Futuro Carro Aqui'
           onChange={this.onChangeInput}
           value={this.state.textInput}></MainSearchBar>
-        <ProductCardMain textInput={this.state.textInput} />
+        <ProductCardMain goToDetail={this.props.goToDetail}  textInput={this.state.textInput} />
       </MainContainer>
     )
   }
