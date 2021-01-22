@@ -11,7 +11,7 @@ grid-row:2;
 `
 export const Quantidade = styled.div`
 text-align:center;
-padding-bottom:5%;
+padding-bottom:2%;
 `
 export const ProductStyled = styled.div`
 display:grid;
@@ -60,10 +60,11 @@ outline:none;
 
 export const ProductStyledItem = styled.div`
 display:grid;
-grid-template-columns:repeat(2,50%);
+grid-template-columns:repeat(3,30%);
 height:55vh;
 align-items:center;
 justify-content:space-around;
 overflow:scroll;
+overflow-x: hidden;
 z-index:0;
 `

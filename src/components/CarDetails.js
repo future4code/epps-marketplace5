@@ -37,6 +37,7 @@ export class CarDetails extends Component {
     } else
       return (
         <Contato>
+          <br></br>
           <DivBox>
             <label htmlFor="input1"> Nome: </label>
             <Inputs id="input1" />
@@ -50,7 +51,7 @@ export class CarDetails extends Component {
             <Inputs id="input3" />
           </DivBox>
           <DivBox>
-            <p><label htmlFor="textarea"> Descreva o veículo: </label></p>
+            <p><label htmlFor="textarea"> Deixe uma mensagem: </label></p>
             <DescriText id="textarea" rows="7" cols="60" />
             <br />
           </DivBox>
