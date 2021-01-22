@@ -32,6 +32,7 @@ As seguintes ferramnetas foram usadas na construção do projeto:
 - [Trello](https://trello.com/pt-BR)
 - [MockFlow](https://mockflow.com/app/#Wireframe)
 - [Color Tool](https://material.io/resources/color/#!/?view.left=0&view.right=0)
+- [Canva](https://www.canva.com/)
 
 
 <h4> Link Surge: 
