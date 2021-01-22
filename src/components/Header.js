@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HeaderBar, Button, ImgLogo, HeaderStyled, HeaderContainer } from './Styled/StyledHeader'
+import { HeaderBar, Button, ImgLogo, HeaderStyled, HeaderContainer, ImgBandeira } from './Styled/StyledHeader'
 
 
 export class Header extends Component {
@@ -7,13 +7,14 @@ export class Header extends Component {
     return (
       <HeaderContainer>
         <HeaderStyled>
-          <ImgLogo src="https://i.imgur.com/jz0OHrk.png" />
         </HeaderStyled>
-        <HeaderBar>
-          <Button onClick={this.props.home}>FutureCar</Button>
-          <Button onClick={this.props.sell}>Venda</Button>
-          <Button onClick={this.props.buy}>Compra</Button>
-        </HeaderBar>
+        <HeaderBar>   
+        <ImgBandeira src="https://i.imgur.com/8XSUODo.png" />
+          <Button onClick={this.props.home}>FUTURECAR</Button>
+          <Button onClick={this.props.sell}>VENDA</Button>
+          <Button onClick={this.props.buy}>COMPRA</Button>
+          <ImgLogo src="https://i.imgur.com/L33bCT9.png" />
+          </HeaderBar>
       </HeaderContainer>
     );
   }

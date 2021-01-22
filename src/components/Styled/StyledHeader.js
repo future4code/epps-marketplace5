@@ -1,4 +1,4 @@
-import styled from  'styled-components'
+import styled from 'styled-components'
 
 
 
@@ -12,7 +12,7 @@ justify-content: center;
 `
 
 export const HeaderStyled = styled.div`
-background-color: #6D6D6D;
+background-color: #9b0000;
 width: 100vw;
 height: 100%;
 align-items: center;
@@ -22,22 +22,22 @@ grid-row:1;
 export const HeaderBar = styled.div`
 display:flex;
 background-image: url("https://i.imgur.com/8ADpvrB.png");
-background-color:red;
+background-color:#d50000;
 width: 100vw;
 height: 100%;
 align-items: center;
-justify-content: space-evenly;
+justify-content:space-between;
 grid-row:0;
-z-index:100;
+/* z-index:100; */
 `
 export const MidlleStyled = styled.div`
 display:flex;
 width: 100vw;
 height: 10%;
 align-items: center;
-justify-content: space-evenly;
+justify-content: space-between;
 `
- 
+
 export const Button = styled.p`
 border-color: #004abe;
 border-radius: 4px;
@@ -50,13 +50,16 @@ padding: 5px ;
     transition: all .4s ease-in-out;
 }
 color: white;
-/* margin-right: 15vw; */
 text-align: center;
 font-size: 30px;
-width:150px;
+width: 12vw;
 `
 
 export const ImgLogo = styled.img`
-display: grid;
-width: 10%;
+width: 25%;
+margin-bottom: 4%;
+`
+export const ImgBandeira = styled.img`
+width: 28%;
+margin-bottom: 5%;
 `

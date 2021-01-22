@@ -1,11 +1,16 @@
 import styled from  'styled-components'
 
 export const ContainerCard = styled.div`
-  height: 80%;
+display:flex;
+height: 35vh;
+width: 30vw;
+flex-direction:column;
+align-items:center;
 `;
 export const ImageCard = styled.img`
-  height: 10%;
-  width: 10%;
+  height: 45%;
+  width: 70%;
+  padding:1%;
 `;
 export const PCard = styled.p`
   display: flex;
@@ -24,8 +29,9 @@ export const ButtonCard = styled.button`
   font-weight: 600;
   line-height: 16px;
   padding: 5px ;
-  display:flex;
   justify-content:center;
+  height: 10%;
+  width: 25%;
   &:hover {
     background: #e9f0f7;
     transition: all .4s ease-in-out;

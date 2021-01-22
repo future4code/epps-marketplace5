@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import { Detalhes, ProductStyled, DetalhesCarro, ButtonCard, Contato, Inputs } from './Styled/CarDetailsStyled'
+import {DescriText, DivBox} from './Styled/StyledSellers'
+import {Inputs} from './Styled/StyledProductPage'
+import { Detalhes, ProductStyled, DetalhesCarro, ButtonCard, Contato} from './Styled/CarDetailsStyled'
 
 export class CarDetails extends Component {
   state = {
     DetailPage: true,
     ContatoPage: false,
+    Car:this.props.Car,
   }
 
   ChangePage = () => {
@@ -21,41 +24,41 @@ export class CarDetails extends Component {
     if (this.state.DetailPage) {
       return (
         <Detalhes>
-          <img width='80%' src="https://1.bp.blogspot.com/-j5yZskmK3Dw/XQpNS-UzYfI/AAAAAAAABWQ/YSo8CML66x4ikE7lNL3-fLZig8gKbkXzgCLcBGAs/s1600/novo-peugeot-2008-2020%2B%252814%2529.jpg"></img>
+          <img width='80%' src={this.state.Car.imagen}></img>
           <DetalhesCarro>
-            <p>price:car.price</p>
-            <p>name:car.name</p>
-            <p>shipping:car.envio</p>
-            <p>description:car.description</p>
-            <p>paymentMethod:car.pagamento</p>
+            <p><strong>Preço: </strong>R$ {this.state.Car.price},00</p>
+            <p><strong>Marca/Modelo: </strong>{this.state.Car.name} - {this.state.Car.Modelo}</p>
+            <p><strong>Prazo de Entrega (dias):</strong> {this.state.Car.shipping}</p>
+            <p><strong>Descrição: </strong>{this.state.Car.description}</p>
+            <p><strong>Forma de Pagamento: </strong>{this.state.Car.paymentMethod}</p>
           </DetalhesCarro>
         </Detalhes>
       )
     } else
       return (
         <Contato>
-          <Inputs>
+          <DivBox>
             <label htmlFor="input1"> Nome: </label>
-            <input id="input1" />
-          </Inputs>
-          <Inputs>
+            <Inputs id="input1" />
+          </DivBox>
+          <DivBox>
             <label htmlFor="input2"> E-mail: </label>
-            <input id="input2" />
-          </Inputs>
-          <Inputs>
+            <Inputs id="input2" />
+          </DivBox>
+          <DivBox>
             <label htmlFor="input3"> Telefone: </label>
-            <input id="input3" />
-          </Inputs>
-          <Inputs>
+            <Inputs id="input3" />
+          </DivBox>
+          <DivBox>
             <p><label htmlFor="textarea"> Descreva o veículo: </label></p>
-            <textarea id="textarea" rows="7" cols="60" />
+            <DescriText id="textarea" rows="7" cols="60" />
             <br />
-          </Inputs>
+          </DivBox>
         </Contato>
       )
   }
   render() {
-
+    console.log(this.state.cars)
     return (
 
       <ProductStyled>
