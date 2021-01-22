@@ -14,7 +14,7 @@
 - [x] Página de contato com o vendedor
 - [x] Página do "Sobre Nós", "Institucional" e "F.A.Q"
 
-### 🛠 Tecnologias:
+### 💻 Tecnologias:
 
 As seguintes tecnologias foram usadas na construção do projeto:
 
