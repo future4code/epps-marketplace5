@@ -27,7 +27,7 @@ As seguintes tecnologias foram usadas na construção do projeto:
 
 ### 🛠 Ferramentas:
 
-As seguintes ferramnetas foram usadas na construção do projeto:
+As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Trello](https://trello.com/pt-BR)
 - [MockFlow](https://mockflow.com/app/#Wireframe)
