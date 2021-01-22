@@ -12,10 +12,12 @@ export const MainStyled = styled.div`
 display:grid;
 grid-template-rows: repeat(2,1fr);
 grid-template-columns:repeat(3,1fr);
-height:40vh;
+height:45vh;
 align-items:center;
 justify-content:center;
-row-gap:15%;
+row-gap:10%;
+overflow:scroll;
+overflow-x: hidden;
 `
 
 export const FiltroQuantidade = styled.h2`

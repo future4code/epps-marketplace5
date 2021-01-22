@@ -9,9 +9,9 @@ export class ProductPage extends Component {
   state = {
     productlist: [],
     inputMin: 1,
-    inputMax: 200000,
+    inputMax: 500000,
     inputText: '',
-    inputDate: 100,
+    inputDate: 500,
     inputTipo: 'Passeio',
   }
 

@@ -26,7 +26,6 @@ height: 100%;
 align-items: center;
 justify-content:space-between;
 grid-row:0;
-/* z-index:100; */
 `
 export const MidlleStyled = styled.div`
 display:flex;

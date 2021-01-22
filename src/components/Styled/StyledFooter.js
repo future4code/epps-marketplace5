@@ -7,7 +7,7 @@ background-color: #8e8e8e;
 width: 100vw;
 height:100%;
 grid-row:3;
-/* z-index:100; */
+z-index:100;
 `;
 
 export const Contact = styled.div`

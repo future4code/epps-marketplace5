@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import {FooterStyled} from './Styled';
 import {
   FooterStyled,
   Contact,
@@ -25,7 +24,6 @@ export class Footer extends Component {
           <a href="https://www.outlook.com" target="_blank">
             <ContactIcons src={LogoEmail} />
           </a>
-
           <a href="https://www.facebook.com/" target="_blank">
             <ContactIcons src={LogoFacebook} />
           </a>
@@ -36,13 +34,9 @@ export class Footer extends Component {
             <ContactIcons src={LogoPhone} />
           </a>
         </Contact>
-
         <TextFooter onClick={this.props.aboutus}>Sobre nós</TextFooter>
-        
         <TextFooter onClick={this.props.aboutus}>Institucional</TextFooter>
-
         <TextFooter onClick={this.props.aboutus}>F.A.Q</TextFooter>
-
         <Payment>
           <PaymentIcons src={LogoAmericaExpress} />
           <PaymentIcons src={LogoMastercard} />
