@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🏁 FUTURECAR 🏁
 
-## Available Scripts
+<h4 align="center"> 
+	👉 Status: Concluído ✅👏
+</h4>
 
-In the project directory, you can run:
+<h3 align="justify">Sejam bem-vindos ao FUTURECAR, startup voltada à compra e venda de veículos usados. Pensando em inovar no mercado, na FutureCar as pessoas buscam os automóveis dos sonhos de acordo com sua necessidade específica: carros esportivos, carros populares, pickups, microvans e super luxo. </h3> 
 
-### `npm start`
+### ✨ Funcionamento:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] Página com detalhes do veículo
+- [x] Página de venda com formulário para cadastro de veículo
+- [x] Página de compra com filtros de busca (título, valor máximo, mínimo e data de entrega)
+- [x] Página de contato com o vendedor
+- [x] Página do "Sobre Nós", "Institucional" e "F.A.Q"
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### 💻 Tecnologias:
 
-### `npm test`
+As seguintes tecnologias foram usadas na construção do projeto:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://pt-br.reactjs.org/)
+- [JavaScript](https://www.javascript.com/)
 
-### `npm run build`
+### 🎨 Layout:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Styled-Components
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### 🛠 Ferramentas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-### `npm run eject`
+- [Trello](https://trello.com/pt-BR)
+- [MockFlow](https://mockflow.com/app/#Wireframe)
+- [Color Tool](https://material.io/resources/color/#!/?view.left=0&view.right=0)
+- [Canva](https://www.canva.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<h4> Link Surge: 
+http://damaging-blood.surge.sh
+</h4>
+<img src="https://user-images.githubusercontent.com/74496886/105532861-2fcc4f00-5cca-11eb-9b0c-57dd11d05187.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/74496886/105532908-3e1a6b00-5cca-11eb-8392-b25fb4c223ab.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/74496886/105533003-5a1e0c80-5cca-11eb-82d1-379c12422e85.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/74496886/105533072-728e2700-5cca-11eb-87fc-1fd66204999b.png" width="90%"></img> 
