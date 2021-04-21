@@ -39,3 +39,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 http://damaging-blood.surge.sh
 </h4>
 <img src="https://user-images.githubusercontent.com/74496886/105532861-2fcc4f00-5cca-11eb-9b0c-57dd11d05187.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/74496886/105532908-3e1a6b00-5cca-11eb-8392-b25fb4c223ab.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/74496886/105533003-5a1e0c80-5cca-11eb-82d1-379c12422e85.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/74496886/105533072-728e2700-5cca-11eb-87fc-1fd66204999b.png" width="90%"></img> 
+
+
+Participantes:
+
+https://github.com/WBernardo
+
+https://github.com/MarivoneAraujo
+
+https://github.com/Vivian-Oliveira
+
+https://github.com/julianapedroso
